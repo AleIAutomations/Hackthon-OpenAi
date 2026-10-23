@@ -96,4 +96,8 @@ Dados fictícios (já no formulário): contrato R$ 5.000, receita R$ 200, 3.000 
 
 > "Dar 0,5 p.p. de desconto custa o mesmo que ver a inadimplência subir 50%."
 
-Cálculo em `src/lib/credito.js`, testes em `test/credito.test.js`. Scoring por ML e explicação por LLM ainda não foram implementados.
+Cálculo em `src/lib/credito.js`, testes em `test/credito.test.js`. Explicação por LLM ainda não foi implementada.
+
+## Modelo de risco (ML)
+
+O pipeline em [`ml/`](ml/README.md) treina um modelo de probabilidade de inadimplência (PD) com o dataset público Home Credit Default Risk e publica uma **curva de risco versionada** em `src/data/curvas-risco/`. O app só lê essa curva (validada por `src/lib/curvaRisco.js`) e passa o custo de risco ao motor; nenhum modelo roda no navegador.

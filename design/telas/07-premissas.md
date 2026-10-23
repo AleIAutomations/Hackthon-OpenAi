@@ -39,6 +39,7 @@ Versão ativa: v2 · aprovada por <nome> em <data> · origem: Manual
 - Premissas simplificadoras aparecem como [alerta informativo](../componentes/alertas.md) fixo na tabela.
 - **Curva de risco (F13):**
   - Uma versão é imutável depois de criada. `+ Nova versão` copia a ativa para edição, com o motivo obrigatório.
-  - Origem da versão: `Manual` ou `Modelo ML confirmado`. Esta última só fica disponível quando existir pipeline de ML, que ainda não foi implementado; até lá, a opção aparece desabilitada com o tooltip "Disponível quando o modelo de risco for integrado".
-  - O formato da curva (valor único ou por faixa/safra) depende da validação das premissas de risco com o time. Comece com valor único (`riskCostMonthly`) e deixe a tabela pronta para receber mais colunas.
+  - Origem da versão: `Manual` ou `Modelo ML confirmado`. As versões de ML vêm de `src/data/curvas-risco/vN.json`, geradas pelo pipeline em [`ml/`](../../ml/README.md) e validadas por `CurvaRiscoSchema` (`src/lib/curvaRisco.js`).
+  - Uma curva de ML chega com `status: "pending_confirmation"`. A aba mostra as faixas A–E (participação, PD, prazo médio e custo de risco a.m.), as métricas do modelo (AUC, Gini, KS) e os selos `Dados de terceiros (Home Credit)` e `Premissa provisória: LGD`. O botão `Confirmar curva` pede nome e motivo; só depois disso `curvaPodeAlimentarMotor()` devolve `true` e a versão pode ficar ativa com `riskCostSource = "ml_confirmed"`. A confirmação fica no workspace (localStorage); o JSON versionado no repositório não muda.
+  - O valor que vai para o motor é `custoRiscoDaCurva(curva, mix)`: sem mix, usa a carteira observada; com mix (`{ A: 0.4, B: 0.4, C: 0.2 }`), pondera o custo por faixa. A tela não calcula nada sozinha.
 - O nome do responsável é texto livre enquanto não houver autenticação.
