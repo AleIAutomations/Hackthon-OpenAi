@@ -1,6 +1,6 @@
 # Validação das premissas da curva de risco (F13)
 
-A curva `v1` (`src/data/curvas-risco/v1.json`) foi gerada pelo pipeline em [`ml/`](../ml/README.md). Ela só pode alimentar o motor depois que alguém do time confirmar as premissas abaixo, na tela **Curva de risco (ML)** (`#/premissas/curva-risco`). Até lá, a curva fica `pending_confirmation`.
+A curva `v1` (`src/data/curvas-risco/v1.json`) foi gerada pelo pipeline em [`ml/`](../ml/README.md). Ela só pode alimentar o motor depois que alguém do time confirmar as premissas abaixo, na tela **Curva de risco (ML)** (`#/premissas?aba=curva-risco`). Até lá, a curva fica `pending_confirmation`.
 
 ## Resultado em uma linha
 
@@ -30,5 +30,5 @@ Volume concedido de R$ 15.000.000 por mês (3.000 contratos × R$ 5.000):
 ## Como confirmar
 
 1. Responda aos itens 1 a 7. Se algum valor mudar (LGD, definição de inadimplência ou calibração), gere uma nova versão com `python -m risco.treino --versao v2 --lgd <valor>` em vez de confirmar a `v1`.
-2. Abra `#/premissas/curva-risco` e revise as faixas e as métricas.
+2. Abra `#/premissas?aba=curva-risco` e revise as faixas e as métricas.
 3. Preencha **Responsável** e **Motivo**, marque a revisão das premissas e clique em **Confirmar curva**. A confirmação fica salva no workspace (localStorage) e pode ser revogada na mesma tela.
