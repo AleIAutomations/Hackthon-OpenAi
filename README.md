@@ -8,7 +8,16 @@
 - **Zod** (schemas para entradas e resultados do motor)
 - **uvu** (testes de fórmulas, validação e cenários da demo)
 
-## Setup
+## Dashboard implementado
+
+O front-end demonstrativo abre com a carteira fictícia preenchida e três cenários lado a lado. Premissas e ajustes de desconto/inadimplência atualizam os resultados e o gráfico na mesma tela. Inclui edição do mix A/B/C, tabela comparativa, memória de cálculo, validação e exportações CSV/JSON.
+
+O visual claro e azul foi aprovado em composição com Impeccable. A fonte Inter está incluída localmente sob licença OFL; a interface funciona sem serviços externos em runtime. As fórmulas de `credito.js` e `calc.js` foram preservadas. O pipeline e as curvas de risco existentes continuam no repositório; este dashboard mantém o mix tabelado da demonstração.
+
+Consulte [o funcionamento do front-end](docs/FRONTEND.md), [o sistema visual](DESIGN.md) e [a captura desktop](.impeccable/review/desktop.png). O projeto SaaS em `design/` continua sendo a especificação-alvo; esta entrega não implementa todas as suas funcionalidades.
+
+### Comandos
+
 ```bash
 npm ci
 npm run dev      # http://localhost:3001
@@ -41,8 +50,8 @@ margem        = (lucro / receita) * 100
 - **CSV:** colunas `cenario,preco,quantidade,custo_total,receita,lucro,margem_pct`
 
 ## Demo Flow (≤ 3 cliques)
-1. `/#` preencher form → `Simular` → `/comparador`
-2. Ajustar sliders → ver 3 cards atualizarem em tempo real
+1. Abrir o dashboard → conferir ou editar a carteira já preenchida
+2. Ajustar sliders → ver 3 cards e gráfico atualizarem em tempo real
 3. `Exportar CSV` → salvar → abrir no Excel/Sheets
 
 ## Testes
@@ -53,7 +62,7 @@ npm test
 ## Estrutura
 ```
 src/
-├── main.jsx          # App root (form ↔ comparador)
+├── main.jsx          # App root do dashboard
 ├── lib/calc.js       # fórmulas + validação input
 ├── lib/credito.js    # cenários e premissas da carteira de crédito
 ├── lib/engine.js     # motor determinístico (fórmulas provisórias)
@@ -61,8 +70,11 @@ src/
 ├── lib/schema.js     # validação produto
 ├── views/
 │   ├── FormularioBase.jsx
-│   └── Comparador.jsx
-└── styles.css        # design system minimal
+│   ├── Comparador.jsx
+│   ├── Dashboard.jsx       # tela principal, ajustes e exportação
+│   ├── CarteiraForm.jsx   # premissas e mix de risco
+│   └── GraficoCenarios.jsx # gráfico e tabela comparativa
+└── styles.css        # dashboard responsivo
 ```
 
 ## Pendências (hackathon)

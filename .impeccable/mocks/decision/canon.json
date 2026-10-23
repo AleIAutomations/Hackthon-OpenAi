@@ -1,0 +1,8 @@
+{
+  "id": "canon",
+  "direction": "Dashboard convencional financeiro",
+  "approved": true,
+  "comp": "canon.png",
+  "prompt": "canon.prompt.txt",
+  "generation": "native-image-gen"
+}
