@@ -3,14 +3,14 @@
 **Objetivo:** Simular como mudanças comerciais afetam o resultado mensal de um negócio, comparando 3 cenários. Produto único, um mês, fórmulas determinísticas.
 
 ## Tech Stack
-- **Vite + React 18** (dev server, HMR, build estático)
+- **Vite + React 19** (dev server, HMR, build estático)
 - **CSS puro** (sem Tailwind/bootstrap — bundle leve)
-- **uvu** (testes — 5 assertions validam fórmula + input)
-- Zero deps externas em runtime (offline-first)
+- **Zod** (schemas para entradas e resultados do motor)
+- **uvu** (testes de fórmulas, validação e cenários da demo)
 
 ## Setup
 ```bash
-npm install
+npm ci
 npm run dev      # http://localhost:3001
 npm run build    # gera /dist
 ```
@@ -47,8 +47,7 @@ margem        = (lucro / receita) * 100
 
 ## Testes
 ```bash
-node test/calc.test.js
-# 5 pass / 0 fail
+npm test
 ```
 
 ## Estrutura
@@ -56,6 +55,9 @@ node test/calc.test.js
 src/
 ├── main.jsx          # App root (form ↔ comparador)
 ├── lib/calc.js       # fórmulas + validação input
+├── lib/credito.js    # cenários e premissas da carteira de crédito
+├── lib/engine.js     # motor determinístico (fórmulas provisórias)
+├── lib/schemas.js    # schemas de entrada e saída com Zod
 ├── lib/schema.js     # validação produto
 ├── views/
 │   ├── FormularioBase.jsx
