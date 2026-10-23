@@ -69,6 +69,10 @@ src/
 - [ ] Pitch deck: 3 cliques → 3 cenários → insight de margem
 - [ ] GitHub repo + Actions deploy
 
+## Especificação do frontend
+
+O frontend definitivo (SaaS) está especificado em [`design/`](design/README.md): telas, componentes, design system, rotas, contrato com o motor e critérios de aceite F01–F14.
+
 ## Metodologia do time
 
 Como o squad multi-agente se organiza (worktrees, board, red team, cronograma 24h): [METODOLOGIA.md](METODOLOGIA.md)
