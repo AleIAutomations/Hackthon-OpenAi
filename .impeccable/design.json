@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-23T18:20:28.458Z",
+  "title": "Design System: Simulador de Decisões",
+  "extensions": {
+    "colorMeta": {
+      "blue": {
+        "role": "primary",
+        "displayName": "blue",
+        "tonalRamp": [
+          "oklch(15.000% 0.21521 262.881)",
+          "oklch(26.429% 0.21521 262.881)",
+          "oklch(37.857% 0.21521 262.881)",
+          "oklch(49.286% 0.21521 262.881)",
+          "oklch(60.714% 0.21521 262.881)",
+          "oklch(72.143% 0.21521 262.881)",
+          "oklch(83.571% 0.21521 262.881)",
+          "oklch(95.000% 0.21521 262.881)"
+        ]
+      },
+      "blue-dark": {
+        "role": "primary",
+        "displayName": "blue-dark",
+        "tonalRamp": [
+          "oklch(15.000% 0.21717 264.376)",
+          "oklch(26.429% 0.21717 264.376)",
+          "oklch(37.857% 0.21717 264.376)",
+          "oklch(49.286% 0.21717 264.376)",
+          "oklch(60.714% 0.21717 264.376)",
+          "oklch(72.143% 0.21717 264.376)",
+          "oklch(83.571% 0.21717 264.376)",
+          "oklch(95.000% 0.21717 264.376)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "ink",
+        "tonalRamp": [
+          "oklch(15.000% 0.04335 261.111)",
+          "oklch(26.429% 0.04335 261.111)",
+          "oklch(37.857% 0.04335 261.111)",
+          "oklch(49.286% 0.04335 261.111)",
+          "oklch(60.714% 0.04335 261.111)",
+          "oklch(72.143% 0.04335 261.111)",
+          "oklch(83.571% 0.04335 261.111)",
+          "oklch(95.000% 0.04335 261.111)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "muted",
+        "tonalRamp": [
+          "oklch(15.000% 0.04072 257.417)",
+          "oklch(26.429% 0.04072 257.417)",
+          "oklch(37.857% 0.04072 257.417)",
+          "oklch(49.286% 0.04072 257.417)",
+          "oklch(60.714% 0.04072 257.417)",
+          "oklch(72.143% 0.04072 257.417)",
+          "oklch(83.571% 0.04072 257.417)",
+          "oklch(95.000% 0.04072 257.417)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "border",
+        "tonalRamp": [
+          "oklch(15.000% 0.01437 254.609)",
+          "oklch(26.429% 0.01437 254.609)",
+          "oklch(37.857% 0.01437 254.609)",
+          "oklch(49.286% 0.01437 254.609)",
+          "oklch(60.714% 0.01437 254.609)",
+          "oklch(72.143% 0.01437 254.609)",
+          "oklch(83.571% 0.01437 254.609)",
+          "oklch(95.000% 0.01437 254.609)"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "ground",
+        "tonalRamp": [
+          "oklch(15.000% 0.00740 260.732)",
+          "oklch(26.429% 0.00740 260.732)",
+          "oklch(37.857% 0.00740 260.732)",
+          "oklch(49.286% 0.00740 260.732)",
+          "oklch(60.714% 0.00740 260.732)",
+          "oklch(72.143% 0.00740 260.732)",
+          "oklch(83.571% 0.00740 260.732)",
+          "oklch(95.000% 0.00740 260.732)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "panel",
+        "tonalRamp": [
+          "oklch(15.000% 0.00000 89.876)",
+          "oklch(26.429% 0.00000 89.876)",
+          "oklch(37.857% 0.00000 89.876)",
+          "oklch(49.286% 0.00000 89.876)",
+          "oklch(60.714% 0.00000 89.876)",
+          "oklch(72.143% 0.00000 89.876)",
+          "oklch(83.571% 0.00000 89.876)",
+          "oklch(95.000% 0.00000 89.876)"
+        ]
+      },
+      "danger": {
+        "role": "neutral",
+        "displayName": "danger",
+        "tonalRamp": [
+          "oklch(15.000% 0.16860 18.589)",
+          "oklch(26.429% 0.16860 18.589)",
+          "oklch(37.857% 0.16860 18.589)",
+          "oklch(49.286% 0.16860 18.589)",
+          "oklch(60.714% 0.16860 18.589)",
+          "oklch(72.143% 0.16860 18.589)",
+          "oklch(83.571% 0.16860 18.589)",
+          "oklch(95.000% 0.16860 18.589)"
+        ]
+      },
+      "positive": {
+        "role": "neutral",
+        "displayName": "positive",
+        "tonalRamp": [
+          "oklch(15.000% 0.10326 156.560)",
+          "oklch(26.429% 0.10326 156.560)",
+          "oklch(37.857% 0.10326 156.560)",
+          "oklch(49.286% 0.10326 156.560)",
+          "oklch(60.714% 0.10326 156.560)",
+          "oklch(72.143% 0.10326 156.560)",
+          "oklch(83.571% 0.10326 156.560)",
+          "oklch(95.000% 0.10326 156.560)"
+        ]
+      },
+      "active-nav": {
+        "role": "primary",
+        "displayName": "active-nav",
+        "tonalRamp": [
+          "oklch(15.000% 0.02154 265.764)",
+          "oklch(26.429% 0.02154 265.764)",
+          "oklch(37.857% 0.02154 265.764)",
+          "oklch(49.286% 0.02154 265.764)",
+          "oklch(60.714% 0.02154 265.764)",
+          "oklch(72.143% 0.02154 265.764)",
+          "oklch(83.571% 0.02154 265.764)",
+          "oklch(95.000% 0.02154 265.764)"
+        ]
+      },
+      "badge": {
+        "role": "primary",
+        "displayName": "badge",
+        "tonalRamp": [
+          "oklch(15.000% 0.02707 260.318)",
+          "oklch(26.429% 0.02707 260.318)",
+          "oklch(37.857% 0.02707 260.318)",
+          "oklch(49.286% 0.02707 260.318)",
+          "oklch(60.714% 0.02707 260.318)",
+          "oklch(72.143% 0.02707 260.318)",
+          "oklch(83.571% 0.02707 260.318)",
+          "oklch(95.000% 0.02707 260.318)"
+        ]
+      },
+      "button-border": {
+        "role": "primary",
+        "displayName": "button-border",
+        "tonalRamp": [
+          "oklch(15.000% 0.09809 266.220)",
+          "oklch(26.429% 0.09809 266.220)",
+          "oklch(37.857% 0.09809 266.220)",
+          "oklch(49.286% 0.09809 266.220)",
+          "oklch(60.714% 0.09809 266.220)",
+          "oklch(72.143% 0.09809 266.220)",
+          "oklch(83.571% 0.09809 266.220)",
+          "oklch(95.000% 0.09809 266.220)"
+        ]
+      },
+      "button-hover": {
+        "role": "primary",
+        "displayName": "button-hover",
+        "tonalRamp": [
+          "oklch(15.000% 0.01733 264.486)",
+          "oklch(26.429% 0.01733 264.486)",
+          "oklch(37.857% 0.01733 264.486)",
+          "oklch(49.286% 0.01733 264.486)",
+          "oklch(60.714% 0.01733 264.486)",
+          "oklch(72.143% 0.01733 264.486)",
+          "oklch(83.571% 0.01733 264.486)",
+          "oklch(95.000% 0.01733 264.486)"
+        ]
+      },
+      "input-border": {
+        "role": "neutral",
+        "displayName": "input-border",
+        "tonalRamp": [
+          "oklch(15.000% 0.02085 254.922)",
+          "oklch(26.429% 0.02085 254.922)",
+          "oklch(37.857% 0.02085 254.922)",
+          "oklch(49.286% 0.02085 254.922)",
+          "oklch(60.714% 0.02085 254.922)",
+          "oklch(72.143% 0.02085 254.922)",
+          "oklch(83.571% 0.02085 254.922)",
+          "oklch(95.000% 0.02085 254.922)"
+        ]
+      },
+      "divider": {
+        "role": "neutral",
+        "displayName": "divider",
+        "tonalRamp": [
+          "oklch(15.000% 0.00744 260.732)",
+          "oklch(26.429% 0.00744 260.732)",
+          "oklch(37.857% 0.00744 260.732)",
+          "oklch(49.286% 0.00744 260.732)",
+          "oklch(60.714% 0.00744 260.732)",
+          "oklch(72.143% 0.00744 260.732)",
+          "oklch(83.571% 0.00744 260.732)",
+          "oklch(95.000% 0.00744 260.732)"
+        ]
+      },
+      "chart-cost": {
+        "role": "neutral",
+        "displayName": "chart-cost",
+        "tonalRamp": [
+          "oklch(15.000% 0.03538 258.372)",
+          "oklch(26.429% 0.03538 258.372)",
+          "oklch(37.857% 0.03538 258.372)",
+          "oklch(49.286% 0.03538 258.372)",
+          "oklch(60.714% 0.03538 258.372)",
+          "oklch(72.143% 0.03538 258.372)",
+          "oklch(83.571% 0.03538 258.372)",
+          "oklch(95.000% 0.03538 258.372)"
+        ]
+      },
+      "chart-result": {
+        "role": "neutral",
+        "displayName": "chart-result",
+        "tonalRamp": [
+          "oklch(15.000% 0.08998 259.441)",
+          "oklch(26.429% 0.08998 259.441)",
+          "oklch(37.857% 0.08998 259.441)",
+          "oklch(49.286% 0.08998 259.441)",
+          "oklch(60.714% 0.08998 259.441)",
+          "oklch(72.143% 0.08998 259.441)",
+          "oklch(83.571% 0.08998 259.441)",
+          "oklch(95.000% 0.08998 259.441)"
+        ]
+      },
+      "chart-negative": {
+        "role": "neutral",
+        "displayName": "chart-negative",
+        "tonalRamp": [
+          "oklch(15.000% 0.17285 20.042)",
+          "oklch(26.429% 0.17285 20.042)",
+          "oklch(37.857% 0.17285 20.042)",
+          "oklch(49.286% 0.17285 20.042)",
+          "oklch(60.714% 0.17285 20.042)",
+          "oklch(72.143% 0.17285 20.042)",
+          "oklch(83.571% 0.17285 20.042)",
+          "oklch(95.000% 0.17285 20.042)"
+        ]
+      }
+    },
+    "shadows": [
+      {
+        "name": "slider-thumb",
+        "value": "0 1px 4px #1b3b6d26",
+        "purpose": "Sombra específica do polegar WebKit do slider."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-state",
+        "value": "0.16s ease-out",
+        "purpose": "Transições de cores e bordas dos controles."
+      },
+      {
+        "name": "chart-update",
+        "value": "0.22s ease-out",
+        "purpose": "Posição vertical e altura das barras."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1500px"
+      },
+      {
+        "name": "compact-max",
+        "value": "1250px"
+      },
+      {
+        "name": "stack-analysis-max",
+        "value": "1000px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "700px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Exportar CSV",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Padrão extraído da aparência entregue.",
+      "html": "<div class=\"ds-root\"><button class=\"ds-button ds-button-primary\">Exportar CSV</button></div>",
+      "css": ":host{--blue:#2563eb;--blue-dark:#1d4ed8;--ink:#172338;--muted:#64748b;--border:#dfe6ef;--ground:#f3f6fb;--panel:#fff;--radius:10px;--danger:#b42f40}.ds-root{font:14px/1.5 Inter,sans-serif;color:var(--ink,#172338)}.ds-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:41px;padding:10px 14px;border:1px solid var(--border);border-radius:6px;font-size:12px;font-weight:600;white-space:nowrap;background:white;color:var(--ink)}.ds-button-primary{background:var(--blue);color:#fff;border-color:var(--blue)}.ds-button-primary:hover:enabled{background:var(--blue-dark);border-color:var(--blue-dark)}.ds-root button:focus-visible,.ds-root a:focus-visible,.ds-root input:focus-visible{outline:3px solid #2864dd;outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-root button,.ds-root input{transition:none}}.ds-button-primary{background:#fff;color:var(--blue-dark);border-color:#9db9fa}.ds-button-primary:hover:enabled{background:#edf3ff;color:var(--blue-dark);border-color:var(--blue)}"
+    },
+    {
+      "name": "Exportar JSON",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Padrão extraído da aparência entregue.",
+      "html": "<div class=\"ds-root\"><button class=\"ds-button ds-button-secondary\">Exportar JSON</button></div>",
+      "css": ":host{--blue:#2563eb;--blue-dark:#1d4ed8;--ink:#172338;--muted:#64748b;--border:#dfe6ef;--ground:#f3f6fb;--panel:#fff;--radius:10px;--danger:#b42f40}.ds-root{font:14px/1.5 Inter,sans-serif;color:var(--ink,#172338)}.ds-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:41px;padding:10px 14px;border:1px solid var(--border);border-radius:6px;font-size:12px;font-weight:600;white-space:nowrap;background:white;color:var(--ink)}.ds-button-secondary{background:#fff;color:var(--blue-dark);border-color:#9db9fa}.ds-button-secondary:hover:enabled{background:#edf3ff}.ds-root button:focus-visible,.ds-root a:focus-visible,.ds-root input:focus-visible{outline:3px solid #2864dd;outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-root button,.ds-root input{transition:none}}"
+    },
+    {
+      "name": "Ação de texto",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "Padrão extraído da aparência entregue.",
+      "html": "<div class=\"ds-root\"><button class=\"ds-text-button\">Ver tabela</button></div>",
+      "css": ":host{--blue:#2563eb;--blue-dark:#1d4ed8;--ink:#172338;--muted:#64748b;--border:#dfe6ef;--ground:#f3f6fb;--panel:#fff;--radius:10px;--danger:#b42f40}.ds-root{font:14px/1.5 Inter,sans-serif;color:var(--ink,#172338)}.ds-text-button{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:3px 0;background:none;border:0;color:#586d8b;font-size:11px;font-weight:500;min-height:30px}.ds-text-button:hover{color:var(--blue)}.ds-root button:focus-visible,.ds-root a:focus-visible,.ds-root input:focus-visible{outline:3px solid #2864dd;outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-root button,.ds-root input{transition:none}}"
+    },
+    {
+      "name": "Campo monetário",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Padrão extraído da aparência entregue.",
+      "html": "<div class=\"ds-root\"><label>Receita / contrato<span class=\"ds-input-shell\"><span class=\"ds-input-prefix\">R$</span><input type=\"number\" value=\"200\" aria-label=\"Receita por contrato\"></span></label></div>",
+      "css": ":host{--blue:#2563eb;--blue-dark:#1d4ed8;--ink:#172338;--muted:#64748b;--border:#dfe6ef;--ground:#f3f6fb;--panel:#fff;--radius:10px;--danger:#b42f40}.ds-root{font:14px/1.5 Inter,sans-serif;color:var(--ink,#172338)}.ds-input-shell{display:flex;align-items:center;min-width:0;height:39px;border:1px solid #d4deeb;border-radius:5px;background:#fff;transition:border-color .16s ease-out}.ds-input-shell:focus-within{border-color:var(--blue)}.ds-input-prefix{font-size:12px;padding-left:10px;padding-right:5px;color:#394960}.ds-input-shell input{border:0;min-width:0;width:100%;padding:9px 9px 9px 0;background:transparent;color:#18263d;font-size:12px;font-variant-numeric:tabular-nums;outline:none;box-shadow:none}.ds-input-shell input:focus-visible{outline:none}.ds-input-shell:has(input:focus-visible){outline:2px solid var(--blue);outline-offset:2px}.ds-input-shell:not(:has(.ds-input-prefix)) input{padding-left:10px}.ds-root button:focus-visible,.ds-root a:focus-visible,.ds-root input:focus-visible{outline:3px solid #2864dd;outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-root button,.ds-root input{transition:none}}.ds-input-shell input{font-size:13px}"
+    },
+    {
+      "name": "Navegação",
+      "kind": "nav",
+      "refersTo": "navigation-active",
+      "description": "Padrão extraído da aparência entregue.",
+      "html": "<div class=\"ds-root\"><nav><a class=\"ds-nav-item ds-active\" href=\"#simulador\" aria-current=\"location\">Simulador</a><a class=\"ds-nav-item\" href=\"#premissas\">Premissas</a></nav></div>",
+      "css": ":host{--blue:#2563eb;--blue-dark:#1d4ed8;--ink:#172338;--muted:#64748b;--border:#dfe6ef;--ground:#f3f6fb;--panel:#fff;--radius:10px;--danger:#b42f40}.ds-root{font:14px/1.5 Inter,sans-serif;color:var(--ink,#172338)}.ds-nav-item{display:flex;align-items:center;gap:12px;min-height:48px;padding:12px 15px;color:#52627a;font-weight:560;border-radius:7px;margin-bottom:6px}.ds-nav-item:hover{background:#f3f6fb;color:var(--blue)}.ds-nav-item.ds-active{background:#e9f0ff;color:var(--blue-dark);font-weight:650}.ds-root button:focus-visible,.ds-root a:focus-visible,.ds-root input:focus-visible{outline:3px solid #2864dd;outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-root button,.ds-root input{transition:none}}"
+    },
+    {
+      "name": "Dados fictícios",
+      "kind": "chip",
+      "refersTo": "badge",
+      "description": "Padrão extraído da aparência entregue.",
+      "html": "<div class=\"ds-root\"><span class=\"ds-demo-badge\">Dados fictícios</span></div>",
+      "css": ":host{--blue:#2563eb;--blue-dark:#1d4ed8;--ink:#172338;--muted:#64748b;--border:#dfe6ef;--ground:#f3f6fb;--panel:#fff;--radius:10px;--danger:#b42f40}.ds-root{font:14px/1.5 Inter,sans-serif;color:var(--ink,#172338)}.ds-demo-badge{color:var(--blue-dark);background:#e2edff;font-size:11px;font-weight:550;padding:4px 9px;border-radius:5px;white-space:nowrap}.ds-root button:focus-visible,.ds-root a:focus-visible,.ds-root input:focus-visible{outline:3px solid #2864dd;outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-root button,.ds-root input{transition:none}}"
+    },
+    {
+      "name": "Painel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Padrão extraído da aparência entregue.",
+      "html": "<div class=\"ds-root\"><section class=\"ds-panel ds-premises\"><h2>Premissas da carteira</h2></section></div>",
+      "css": ":host{--blue:#2563eb;--blue-dark:#1d4ed8;--ink:#172338;--muted:#64748b;--border:#dfe6ef;--ground:#f3f6fb;--panel:#fff;--radius:10px;--danger:#b42f40}.ds-root{font:14px/1.5 Inter,sans-serif;color:var(--ink,#172338)}.ds-panel{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius)}.ds-premises{padding:20px 22px 22px;scroll-margin-top:20px}.ds-root button:focus-visible,.ds-root a:focus-visible,.ds-root input:focus-visible{outline:3px solid #2864dd;outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-root button,.ds-root input{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Dashboard financeiro convencional azul-claro",
+    "overview": "A direção aprovada usa fundo azul acinzentado claro, superfícies brancas e azul vivo. A linguagem é regular e sóbria: contornos finos, cantos moderados e números tabulares sustentam a leitura dos dados.\n\nA fonte Inter local mantém a identidade e o funcionamento offline. A interface usa formas CSS e ícones SVG de traço; o gráfico também é SVG, construído com os dados em tempo de execução.",
+    "keyCharacteristics": [
+      "Superfícies brancas delimitadas sobre fundo claro.",
+      "Hierarquia numérica com valores grandes e alinhamento tabular.",
+      "Azul para referência, navegação e controles.",
+      "Profundidade discreta e estados de foco visíveis."
+    ],
+    "rules": [
+      {
+        "name": "The Referência Azul Rule",
+        "body": "A referência atual usa azul no valor e uma faixa superior; resultados negativos conservam o significado vermelho mesmo no cartão atual.",
+        "section": "colors"
+      },
+      {
+        "name": "The Números Tabulares Rule",
+        "body": "Valores comparáveis usam `font-variant-numeric: tabular-nums`, incluindo campos, cartões, barras e tabela.",
+        "section": "typography"
+      },
+      {
+        "name": "The Contorno Leve Rule",
+        "body": "Painéis usam borda fina e fundo branco; a sombra do slider é específica do controle, sem se estender aos cartões.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do manter a paleta clara, as superfícies brancas e os contornos finos da direção aprovada.",
+      "Do usar Inter local e números tabulares nos valores comparáveis.",
+      "Do manter legendas, rótulos e tabela junto da comparação gráfica.",
+      "Do preservar estados de foco e o comportamento de movimento reduzido."
+    ],
+    "donts": [
+      "Don't substituir o gráfico de dados por imagem raster.",
+      "Don't aplicar a sombra do slider como elevação de painéis.",
+      "Don't tratar o nome de classe primária como evidência de botão preenchido; a aparência entregue é contornada."
+    ]
+  }
+}
