@@ -2,7 +2,7 @@
 
 ## Contexto do repositório
 
-Aplicação de demonstração em React + Vite para comparar resultados de uma carteira fictícia de empréstimo pessoal em um período mensal. A implementação atual é um MVP offline-first; não possui API, autenticação, banco de dados, IA ou pipeline de ML. A documentação-alvo está no PDF de documentação técnica fornecido pelo time.
+Aplicação de demonstração em React + Vite para comparar resultados de uma carteira fictícia de empréstimo pessoal em um período mensal. A implementação atual é um MVP offline-first; não possui API, autenticação, banco de dados ou IA. O pipeline de ML (offline, Python) fica em `ml/` e só publica curvas de risco versionadas em `src/data/curvas-risco/`; o modelo nunca roda no app nem calcula indicadores. A documentação-alvo está no PDF de documentação técnica fornecido pelo time.
 
 ## Regras obrigatórias
 
@@ -23,6 +23,7 @@ Aplicação de demonstração em React + Vite para comparar resultados de uma ca
 - `npm run dev` (porta 3001)
 - `npm test`
 - `npm run build`
+- `cd ml && python -m unittest discover -s tests` (pipeline de ML)
 
 ## Definição de pronto
 

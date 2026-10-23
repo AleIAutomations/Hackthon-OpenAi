@@ -1,0 +1,134 @@
+{
+  "version": "v1",
+  "split": {
+    "train": 215257,
+    "validation": 46127,
+    "test": 46127
+  },
+  "test": {
+    "auc": 0.7761,
+    "gini": 0.5523,
+    "ks": 0.4161,
+    "brier": 0.066722
+  },
+  "baselineLogistic": {
+    "auc": 0.755,
+    "gini": 0.51,
+    "ks": 0.3824,
+    "brier": 0.068004
+  },
+  "calibration": [
+    {
+      "pdPrevista": 0.011239,
+      "pdObservada": 0.008454,
+      "observacoes": 4613
+    },
+    {
+      "pdPrevista": 0.018599,
+      "pdObservada": 0.018209,
+      "observacoes": 4613
+    },
+    {
+      "pdPrevista": 0.02539,
+      "pdObservada": 0.024496,
+      "observacoes": 4613
+    },
+    {
+      "pdPrevista": 0.033104,
+      "pdObservada": 0.032083,
+      "observacoes": 4613
+    },
+    {
+      "pdPrevista": 0.042711,
+      "pdObservada": 0.045307,
+      "observacoes": 4613
+    },
+    {
+      "pdPrevista": 0.055515,
+      "pdObservada": 0.05788,
+      "observacoes": 4613
+    },
+    {
+      "pdPrevista": 0.072995,
+      "pdObservada": 0.071103,
+      "observacoes": 4613
+    },
+    {
+      "pdPrevista": 0.100207,
+      "pdObservada": 0.10451,
+      "observacoes": 4612
+    },
+    {
+      "pdPrevista": 0.148902,
+      "pdObservada": 0.158716,
+      "observacoes": 4612
+    },
+    {
+      "pdPrevista": 0.293519,
+      "pdObservada": 0.286644,
+      "observacoes": 4612
+    }
+  ],
+  "topFeatures": [
+    {
+      "feature": "EXT_SOURCE_MEDIA",
+      "gainShare": 0.2221
+    },
+    {
+      "feature": "ORGANIZATION_TYPE",
+      "gainShare": 0.0804
+    },
+    {
+      "feature": "EXT_SOURCE_MIN",
+      "gainShare": 0.0569
+    },
+    {
+      "feature": "PRAZO_MESES",
+      "gainShare": 0.0449
+    },
+    {
+      "feature": "EXT_SOURCE_3",
+      "gainShare": 0.0374
+    },
+    {
+      "feature": "BEM_CREDITO",
+      "gainShare": 0.0239
+    },
+    {
+      "feature": "OCCUPATION_TYPE",
+      "gainShare": 0.0231
+    },
+    {
+      "feature": "EXT_SOURCE_2",
+      "gainShare": 0.0227
+    },
+    {
+      "feature": "BUREAU_DIVIDA_CREDITO",
+      "gainShare": 0.0206
+    },
+    {
+      "feature": "DAYS_BIRTH",
+      "gainShare": 0.0189
+    },
+    {
+      "feature": "ANT_PEDIDO_CONCEDIDO_MEDIA",
+      "gainShare": 0.0186
+    },
+    {
+      "feature": "BUREAU_DIAS_CREDITO_MAX",
+      "gainShare": 0.0182
+    },
+    {
+      "feature": "ANT_PRAZO_MEDIA",
+      "gainShare": 0.0176
+    },
+    {
+      "feature": "DAYS_EMPLOYED",
+      "gainShare": 0.0175
+    },
+    {
+      "feature": "EXT_SOURCE_1",
+      "gainShare": 0.0161
+    }
+  ]
+}

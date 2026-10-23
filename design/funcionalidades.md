@@ -159,6 +159,8 @@ Tabela de custo de risco mensal por faixa, com histórico de versões.
 - [ ] A tela de premissas tem uma aba "Curva de risco" com a versão ativa, a lista de versões (v1, v2…) e quem/quando/por quê de cada uma.
 - [ ] No editor, o campo `riskCostMonthly` pode vir de "Manual" ou de "Curva vX". Se vier de uma curva aprovada como modelo de ML, `riskCostSource = "ml_confirmed"`; caso contrário, `"manual"`.
 - [ ] Cada cenário registra a versão da curva usada, que aparece no detalhe e nas exportações.
+- [ ] Curvas de ML são lidas de `src/data/curvas-risco/*.json` e validadas por `CurvaRiscoSchema`. Uma curva com `status: "pending_confirmation"` aparece, mas não pode ser ativada antes da confirmação (quem, quando, por quê).
+- [ ] O custo de risco vindo da curva é sempre `custoRiscoDaCurva()` (`src/lib/curvaRisco.js`); o pipeline que gera as curvas está em [`ml/`](../ml/README.md).
 
 ### F14: Compartilhamento
 Compartilhar um cenário ou uma comparação sem backend.

@@ -1,0 +1,97 @@
+{
+  "version": "v0",
+  "createdAt": "2026-10-23",
+  "status": "pending_confirmation",
+  "confirmation": null,
+  "dataset": {
+    "name": "Fixture sintética (testes)",
+    "url": "https://www.kaggle.com/competitions/home-credit-default-risk",
+    "rows": 6000,
+    "defaultRate": 0.057833,
+    "target": "TARGET = 1: cliente com dificuldade de pagamento (atraso acima de X dias em pelo menos uma das Y primeiras parcelas)",
+    "disclaimer": "Dados públicos de terceiros; não representam a carteira real da empresa."
+  },
+  "model": {
+    "type": "LightGBM",
+    "features": 19,
+    "excludedFeatures": [
+      "CODE_GENDER"
+    ],
+    "seed": 42,
+    "bestIteration": 17,
+    "test": {
+      "auc": 0.6666,
+      "gini": 0.3332,
+      "ks": 0.3101,
+      "brier": 0.053863
+    },
+    "baselineLogistic": {
+      "auc": 0.6806,
+      "gini": 0.3612,
+      "ks": 0.3258,
+      "brier": 0.053234
+    }
+  },
+  "assumptions": {
+    "lgd": 0.45,
+    "lgdSource": "Provisória: 45% é a LGD da abordagem IRB básica de Basileia para exposições sem garantia; validar com o time.",
+    "formula": "riskCostMonthly = PD × LGD / prazo médio (meses)",
+    "provisional": true
+  },
+  "bands": [
+    {
+      "band": "A",
+      "scoreMin": 0.0,
+      "scoreMax": 0.049026,
+      "share": 0.2078,
+      "observations": 187,
+      "pd": 0.032086,
+      "avgTermMonths": 26.36,
+      "riskCostMonthly": 0.000548
+    },
+    {
+      "band": "B",
+      "scoreMin": 0.049026,
+      "scoreMax": 0.052336,
+      "share": 0.1689,
+      "observations": 152,
+      "pd": 0.019737,
+      "avgTermMonths": 25.62,
+      "riskCostMonthly": 0.000347
+    },
+    {
+      "band": "C",
+      "scoreMin": 0.052336,
+      "scoreMax": 0.056758,
+      "share": 0.2211,
+      "observations": 199,
+      "pd": 0.055276,
+      "avgTermMonths": 24.8,
+      "riskCostMonthly": 0.001003
+    },
+    {
+      "band": "D",
+      "scoreMin": 0.056758,
+      "scoreMax": 0.064934,
+      "share": 0.1956,
+      "observations": 176,
+      "pd": 0.0625,
+      "avgTermMonths": 24.73,
+      "riskCostMonthly": 0.001137
+    },
+    {
+      "band": "E",
+      "scoreMin": 0.064934,
+      "scoreMax": 1.0,
+      "share": 0.2067,
+      "observations": 186,
+      "pd": 0.112903,
+      "avgTermMonths": 23.8,
+      "riskCostMonthly": 0.002135
+    }
+  ],
+  "portfolio": {
+    "pd": 0.057779,
+    "riskCostMonthly": 0.001058
+  }
+}
