@@ -13,10 +13,10 @@ const FaixaSchema = z.object({
   riskCostMonthly: rate.max(0.2),
 }).strict();
 
-const ConfirmacaoSchema = z.object({
-  by: z.string().trim().min(1),
-  at: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
-  reason: z.string().trim().min(1),
+export const ConfirmacaoSchema = z.object({
+  by: z.string().trim().min(1, "informe quem confirma a curva"),
+  at: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "data deve estar no formato AAAA-MM-DD"),
+  reason: z.string().trim().min(1, "informe o motivo da confirmação"),
 }).strict();
 
 const MetricasSchema = z.object({
@@ -94,4 +94,12 @@ export function custoRiscoDaCurva(curvaInput, mix) {
 // Só uma curva confirmada por uma pessoa pode alimentar o motor (riskCostSource = "ml_confirmed").
 export function curvaPodeAlimentarMotor(curvaInput) {
   return CurvaRiscoSchema.parse(curvaInput).status === "confirmed";
+}
+
+// Aplica a confirmação humana (quem, quando, por quê) a uma curva pendente.
+export function confirmarCurva(curvaInput, confirmacaoInput) {
+  const curva = CurvaRiscoSchema.parse(curvaInput);
+  if (curva.status !== "pending_confirmation") throw new Error(`curva ${curva.version} já está confirmada`);
+  const confirmation = ConfirmacaoSchema.parse(confirmacaoInput);
+  return CurvaRiscoSchema.parse({ ...curva, status: "confirmed", confirmation });
 }
